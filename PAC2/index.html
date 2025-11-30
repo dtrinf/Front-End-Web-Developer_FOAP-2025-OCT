@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <script type="module" src="assets/index_script.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <header class="arriba">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a class="nav_link" href="#"><img src="assets/icons/home.svg" alt="Home"></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="nav_link" href="index.html">Pokedex</a></li>
+                    <li><a class="nav_link" href="combat.html">Combat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="title_container">
+        <h1 class="h1_title">Pokedex</h1>
+    </div>
+
+    <section class="search-section">
+        <h2>Search Pokemon</h2>
+        <input type="text" class="search-input" placeholder="Enter Pokemon name" id="search-input">
+        <!-- <button class="search-button" id="search-button">Search</button> -->
+    </section>
+
+    <section class="poke-cards">
+        <h2>Pokemon List</h2>
+        <div class="cards-row">
+            <div class="cards-container">
+                <!-- Pokemon cards will be dynamically inserted here -->
+            </div>
+            <div class="card-detail">
+                <!-- Detailed Pokemon info will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <template id="card-template">
+        <article class="pokemon-card">
+            <img class="pokemon-image" src="" alt="Pokemon Image">
+            <h3 class="pokemon-name">.</h3>
+            <p class="pokemon-type">Type: <span></span></p>
+            <p class="pokemon-height">Height: <span></span></p>
+            <p class="pokemon-weight">Weight: <span></span></p>
+            <p class="pokemon-attack">Attack: <span></span></p>
+            <p class="pokemon-defense">Defense: <span></span></p>
+            <p class="pokemon-hp">HP: <span></span></p>
+        </article>
+    </template>
+    
+</body>
+</html>

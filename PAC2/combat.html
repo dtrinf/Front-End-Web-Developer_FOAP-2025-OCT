@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat</title>
+
+    <script src="assets/combat_script.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+    <header class="arriba">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a class="nav_link" href="#"><img src="assets/icons/home.svg" alt="Home"></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="nav_link" href="index.html">Pokedex</a></li>
+                    <li><a class="nav_link" href="combat.html">Combat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="title_container">
+        <h1 class="h1_title">Combat</h1>
+    </div>
+
+    <section class="combat-section">
+        <div class="combat-title">
+            <h2>Pokemon Combat Arena</h2>
+            <p>Select two Pokemon from the Pokedex to battle against each other!</p>
+        </div>
+
+        <!-- Space to display combat cards -->
+         <div class="available-cards-container">
+            <!-- Combat cards will be dynamically inserted here -->
+         </div>
+
+         <div class="combat-cards-container">
+
+         </div>
+    </section>
+
+    <button id="reset-battle-button" class="reset-button" type="reset">Reset</button>
+
+    <template id="combat-card-template">
+        <div class="flip-combat-card">
+            <div class="combat-card-inner">
+                <div class="combat-card-front">
+                    <img class="pokemon-image" src="" alt="Pokemon Image">
+                    <h3 class="pokemon-name">.</h3> 
+                </div>
+                <div class="combat-card-back">
+                    <img class="pokemon-image" src="" alt="Pokemon Image">
+                    <h3 class="pokemon-name">.</h3>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>
