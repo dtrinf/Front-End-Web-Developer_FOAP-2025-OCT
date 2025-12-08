@@ -97,7 +97,7 @@ filterInput.addEventListener('input', () => {
     allCards.forEach(card => {
         const pokemonName = card.querySelector('.pokemon-name').textContent.toLowerCase();
         if (pokemonName.includes(filterValue)) {
-            card.style.display = 'block'; // or '' para restaurar al valor por defecto
+            card.style.display = 'flex'; // or '' para restaurar al valor por defecto
         } else {
             card.style.display = 'none'; // Ocultar la tarjeta
         }

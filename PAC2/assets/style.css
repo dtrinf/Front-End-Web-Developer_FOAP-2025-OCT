@@ -1,3 +1,7 @@
+/* Estilo para arreglar el giro de cartas de combate, evita que se sumen paddings y margins al tamaño total */
+* {
+    box-sizing: border-box;
+}
 
 .arriba {
     /* width:960px; */
@@ -114,7 +118,7 @@
     box-shadow: 0 0 15px 5px #2980b9;
 }
 
-@media (width < 600) {
+@media (width < 700px) {
     .poke-cards {
         display: flex;
         flex-direction: column;
@@ -123,6 +127,10 @@
     }
     .pokemon-card {
         width: 100%;
+    }
+    /* Ajustamos las columnas a una sola en pantallas pequeñas */
+    .cards-row {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -162,8 +170,8 @@
   of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-combat-card {
   background-color: transparent;
-  width: 200px;
-  height: 305px;
+  width: 215px;
+  height: 340px;
   perspective: 1000px;
   margin: 10px;
 }
